@@ -41,3 +41,11 @@
     多个键值对之间用逗号
     px不用加
 
+## react页面引入路径问题
+    方法1 <img src={require('../img/icon1.png')} alt="" />
+    方法2 import user from '../img/user.png'
+          <img src={search} alt="" />
+
+## dist问题打包失败
+    在prod下也使用stylus插件
+    在config中最后加上相对路径 "homepage":"./"
