@@ -19,7 +19,7 @@ import LoginEmail from './containers/LoginEmail/LoginEmail';
 import store from "./redux/store";
 //swiper样式
 import 'swiper/dist/css/swiper.css';
-
+import 'antd-mobile/dist/antd-mobile.css';
 import FooterNav from './components/FooterNav/FooterNav';
 
 ReactDOM.render(
@@ -35,6 +35,7 @@ ReactDOM.render(
           <Route path='/shopcart' component={ShopCart} />
           <Route path='/personal' component={Personal} />
           <Route path='/interlayer' component={InterLayer} />
+          <Route path='/' component={Home} />
         </Switch>
       </HashRouter>
     </Provider>

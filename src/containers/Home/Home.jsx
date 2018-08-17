@@ -8,6 +8,8 @@ import Swiper from 'swiper';
 import {getDataAsync, getBannerAsync, getHomeAsync} from '../../redux/actions';
 import FooterNav from '../../components/FooterNav/FooterNav';
 import HomeGoodThings from '../../components/HomeGoodThings/HomeGoodThings';
+import GoTop from '../../components/goTop/goTop';
+
 
 class Home extends Component {
   /*  static propTypes = {
@@ -290,7 +292,7 @@ class Home extends Component {
               </div>
               {/*列表商品*/}
               <HomeGoodThings/>
-
+              <GoTop />
             </div>
           </div>
         </div>
