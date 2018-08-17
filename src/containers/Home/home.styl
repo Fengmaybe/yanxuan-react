@@ -1,0 +1,394 @@
+
+@import "../../assets/css/mixins.styl"
+#scrollContainer
+  width 100%
+  overflow hidden
+  margin-bottom 50px
+
+.homeContainer
+  width 100%
+  overflow hidden
+  background #F4F4F4
+  .homeHeader
+    background #fff
+    position fixed
+    overflow hidden
+    z-index 10
+    width 100%
+    top 0
+    .hd_Wrap
+      background: #ffffff;
+      padding: 16px;
+      width: 100%;
+      height: 75 /$rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo
+        display inline-block
+        width: 18%;
+        height 20px
+        background-image url("images/logo.png")
+        background-size cover
+        background-position center
+      .search
+        width: 70%;
+        height 28px
+        font-size: .37333 /$rem
+        background-color: #ededed
+        border-radius: 6px
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-right: 34px
+        margin-left 10px
+        .sContent
+          .icon-xingtaiduICON_sousuo--
+            font-size 16px
+    .hdScorllTab
+      width: 100%;
+      overflow: hidden
+      display: flex
+      .hdScorllItem
+        padding: 0 0 2px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        span
+          width: 70px
+          text-align: center
+          flex-shrink: 0;
+          flex-wrap: nowrap
+          margin: 0 .5 * 75 /@rem
+          font-size: .37333 * 75 /@rem
+          &.active
+            padding: 0 0 12px 0;
+            border-bottom: 3px solid #b4282d
+            color: #b4282d
+
+  .swiper-container
+    margin-top 90px
+    width 100%
+    height 200px
+    .swiper-wrapper
+      height 200px
+      display: inline-flex
+      .swiper-slide
+        width 100%
+        height 100%
+        img
+          width 100%
+          height 100%
+    .swiper-pagination
+    .swiper-pagination-bullet
+      width 16px
+      display inline-block
+      border-radius 0
+      height 3px
+      background #fff
+      opacity 0.4
+    .swiper-pagination
+      .swiper-pagination-bullet-active
+        opacity 1
+  .tips
+    margin-bottom 6px
+    background #fff
+    display flex
+    justify-content space-between
+    align-items center
+    width 100%
+    .item
+      width 33%
+      height 36px
+      margin-left 15px
+      img
+        width 16px
+        vertical-align middle
+      span
+        font-size 12px
+        color #333
+        line-height 36px
+        vertical-align middle
+  .home_brand
+    margin-bottom 50px
+    background-color #ffffff
+    .brand
+      display flex
+      flex-flow row nowrap
+      align-items center
+      justify-content center
+      height 55px
+      font-size: 14px
+      .icon-yuanjiantou1
+        font-size: 15px
+    .brand-itemWrap
+      .brand-item
+        display inline-block
+        margin-bottom: 4px
+        width 140px
+        height 117px
+        overflow hidden
+        background-color #f4f4f4
+        padding 18px
+        border 1px solid #999
+        &:nth-child(1), &:nth-child(3)
+          margin-left 8px
+        &:nth-child(1)
+          background url("http://yanxuan.nosdn.127.net/7f55f337f98a198ac3d629847171d5d2.png?imageView&thumbnail=355x0&quality=65") no-repeat;
+          background-size 100%;
+        &:nth-child(2)
+          background url("http://yanxuan.nosdn.127.net/f57d460dde6e737f2bacd9f67cb73a41.png") no-repeat;
+          background-size: 100%;
+        &:nth-child(3)
+          background url("http://yanxuan.nosdn.127.net/5e2f6d68ca4cf25b18d6573eafa2a4d4.png?imageView&thumbnail=355x0&quality=65") no-repeat;
+          background-size: 100%;
+        &:nth-child(4)
+          background url("http://yanxuan.nosdn.127.net/cc056d931b009298769d65b94175d696.png?imageView&thumbnail=355x0&quality=65") no-repeat;
+          background-size: 100%;
+        h4
+          text-overflow ellipsis
+          white-space nowrap
+          overflow hidden
+          color #333
+          font-size: 14px
+          line-height 16px
+          margin-bottom 6px
+        .title
+          font-size 12px
+          color gray
+        .goNew
+          display inline-block
+          font-size 12px
+          line-height 12px
+          border 1px solid #CEAD6F
+          padding 2px
+          color #CEAD6F
+          margin-top 5px
+  .home-newItems
+    margin-top: -46px
+    margin-bottom: 8px
+    background-color: #fff
+    .newItemsWrap
+      background: url(//yanxuan-static.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/bitmap2-d626e0b52a.png);
+      background-size: 375px 130px;
+      height: 130px;
+      position: relative;
+      margin-top 55px
+      span
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        color: #B4A078;
+
+      #all
+        text-align: center;
+        margin: 18px auto 0;
+        width: 120px;
+        height: 28px;
+        font-size: 14px;
+        line-height: 28px;
+        background: #F4E9CB;
+        color: #B4A078;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+
+    .home-goodList
+      padding-bottom: 25px;
+      margin-top: 24px;
+      height: 240px;
+      background-color: #fff;
+      display: flex;
+      .list
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        .goodList-item
+          margin-left: 15px;
+          width: 140px;
+          .wrap
+            width: 140px;
+            background-color: #f4f4f4;
+            img
+              width: 100%;
+              background-size: 100% 100%;
+          .title
+            z-index: 1;
+            margin-top: 7px;
+            margin-left: 7px;
+            margin-bottom 4px
+            height: 14px;
+            overflow: hidden;
+            background-color: #e5686d;
+            padding: 4px 4px;
+            line-height: 14px;
+            text-align: center;
+            color: #fff;
+            font-size: 10px;
+            border-radius: 1px;
+            display: inline-block;
+            vertical-align: middle;
+
+          .name
+            margin-bottom: 5px
+            padding: 0 5px
+            font-size: 14px
+            line-height: 17px
+            text-overflow: ellipsis
+            overflow: hidden
+            white-space: nowrap
+            color: #333
+            text-align: left
+
+          .newItemDesc
+            display: block;
+            font-size: 12px;
+            color: #7f7f7f;
+            line-height: 15px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding-left 10px
+            padding-right 10px
+            padding-top 4px
+            padding-bottom 4px
+
+          .price
+            padding-top 4px
+            font-size: 16px;
+            text-align: center;
+            color: #b4282d;
+            line-height: 1;
+
+  .home_topic
+    margin-top: 6px;
+    .topicImg
+      img
+        width: 100%;
+    .topic_wrap
+      margin-top: 6px;
+      background-color #fff
+    .topic_content
+      height 55px
+      display flex
+      flex-flow row nowrap
+      justify-content center
+      align-items center
+      span
+        font-size 16px
+      i
+        font-size 15px
+
+  .home_imgWrap
+    display: flex
+    background-color #fff
+    .home_imgScroll
+      padding-left: 18px
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .imgItem
+        margin-right: 18px
+        width: 288px
+        margin-bottom: 8px
+        border-radius: 8px
+        overflow: hidden
+        float: left
+        img
+          width: 100%;
+          margin-bottom: 4px
+        .content
+          height: 16px
+          margin-bottom: 4px
+          overflow: hidden
+          h4
+            white-space: nowrap
+            overflow: hidden
+            -ms-text-overflow: ellipsis
+            -o-text-overflow: ellipsis
+            text-overflow: ellipsis
+            width: 200px
+            float: left
+            font-size: 14px
+          span
+            float: right;
+            font-size: 14px
+            color: #b4282d
+            margin-right 4px
+
+        .desc
+          white-space: nowrap
+          overflow: hidden
+          -ms-text-overflow: ellipsis
+          -o-text-overflow: ellipsis
+          text-overflow: ellipsis
+          width: 286px
+          font-size: 12px
+          line-height 16px
+          color: #7F7F7F
+  .timerWrap
+    display flex
+    margin-top 10px
+    background-color #ffffff
+    justify-content space-around
+    align-items center
+    width 100%
+    height 190px
+    .timerLeft
+      width 40%
+      display flex
+      flex-direction column
+      align-items center
+      justify-content center
+      .title
+        font-size 20px
+        color black
+        font-family: "PingFang SC", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+
+      .h_m_s
+        padding 20px 0
+        .hour, .min, .sec
+          display inline-block
+          width 26px
+          height 26px
+          background-color black
+          color #fff
+          text-align center
+          vertical-align middle
+          line-height 26px
+          border-radius 2px
+        .colon
+          display inline-block
+          font-weight bolder
+          width 10px
+          height 26px
+          text-align center
+          line-height 26px
+          font-size 16px
+      .nextTimer
+        font-size 12px
+        color black
+    .timerRight
+      width 40%
+      position relative
+      img
+        width 100%
+      .price
+        position absolute
+        right 10px
+        bottom 5px
+        background-color rgba(244, 143, 24, .95);
+        width 48px
+        height 48px
+        border-radius 50%
+        .priceFont
+          text-align center
+          line-height 48px
+          font-size 16px
+          color white
+
+
